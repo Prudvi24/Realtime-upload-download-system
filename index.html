@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Upload and Download files</title>                  <!-- Title of a page -->
+	<link rel="stylesheet" href="style.css">     <!-- Importing the external style sheets -->
+</head>
+	<body>
+          <div id="today" class="container"></div>
+          <main>
+          	<h1>Upload a file</h1>                                                           <!-- Upload files -->
+          	<p>
+          		<input type="file" id="file-input" name="files[]" multiple="multiple" />    <!-- For multiple file selection -->
+          		<label for="file-input">Select a file</label>
+                    <br />
+          	</p>
+               <br />
+                   <button id="cancel-file" value="cancel"></button>
+                         <label for="cancel-file">Cancel</label>
+          	<p>
+          		<progress id="upload-progress"></progress>                            <!--Progress bar-->
+          	</p>
+          	<p id="message"></p>
+          	<p id="status"></p>
+          	<p id="loaded_total"></p>
+               <p id="time1"></p>
+               <footer> <p> &copy; GREAT4 </p></footer>       <!-- copy right footer -->
+          </main>
+
+          <main>
+               <h1>Download a file</h1>
+               <p>
+                    <button type="file" id="file-input1" onClick="myFunction()" ></button>
+                    <label for="file-input1">Select file</label>
+               </p>
+               <br />
+               <div id="table1"></div>
+               <br />
+               <br />
+               <br />
+               <footer> <p> &copy; GREAT4 </p></footer>
+
+          </main>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!-- Javascript standard library -->
+          <script src="file-upload-progress-bar.js"></script>
+          <script src="tables.js"></script>
+          <script src="time.js"></script>
+          <script src="toggle.js"></script>
+	</body>
+	
+</html>
